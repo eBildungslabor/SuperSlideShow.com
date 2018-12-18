@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>SuperSlideShow.com!!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body id="body">
+    <div id="drop-box-overlay" style="display: none;">
+      <h1>Drop images anywhere...</h1>
+    </div>
+    <input id="filebutton" type="file" multiple="" onchange="parse_images(this.files)" style="display: none;">
+    <div id='dropzone'>Drop images here or&nbsp;&nbsp;<a href="#" class="myButton" onclick='javascript:document.getElementById("filebutton").click();'>Select files</a></div>
+    <div id="legalstuff">Supported by <a href="https://ey-i.org" target="_blank">Ey-I.org</a>, a completely typical AI organization.</div>
+    <img id='loading' src='gfx/loading.gif' style='position:absolute;top:45%;left:48%;display:none;'>
+    <div id="slideshow" style='display:none'></div>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/kenburns.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
